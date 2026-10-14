@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Memories ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff5f7, #f8dce5, #fffaf0);
+      color: #71374e;
+      text-align: center;
+      padding: 35px 16px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 30px 22px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid #edc4d1;
+      border-radius: 25px;
+      box-shadow: 0 12px 35px rgba(120, 50, 75, 0.12);
+    }
+
+    .flower {
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 7vw, 48px);
+      color: #a33d65;
+      margin: 8px 0;
+    }
+
+    .subtitle {
+      color: #94717e;
+      margin-bottom: 28px;
+      font-size: 14px;
+    }
+
+    .event {
+      display: block;
+      width: 100%;
+      margin: 13px 0;
+      padding: 16px 12px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 5px 12px rgba(100, 40, 60, 0.12);
+    }
+
+    .event:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(100, 40, 60, 0.2);
+    }
+
+    .pink { background: #b94e73; }
+    .gold { background: #b68a3c; }
+    .green { background: #688d7e; }
+    .red { background: #a94355; }
+    .purple { background: #9870a3; }
+
+    footer {
+      font-size: 12px;
+      color: #987785;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="flower">🌸 💍 🌸</div>
+
+    <h1>Wedding Memories</h1>
+
+    <p class="subtitle">
+      Beautiful Moments • Forever Together ❤️
+    </p>
+
+    <a class="event pink"
+       href="https://photos.app.goo.gl/N9RHsPLafKAQEd9G9"
+       target="_blank" rel="noopener">
+       🌸 Mayoon &amp; Nikkah
+    </a>
+
+    <a class="event gold"
+       href="https://photos.app.goo.gl/fWTLFFbCBf7wHJFS9"
+       target="_blank" rel="noopener">
+       💛 Mehndi
+    </a>
+
+    <a class="event green"
+       href="https://photos.app.goo.gl/Ngnfe3ZqBZ8LqQsn9"
+       target="_blank" rel="noopener">
+       🌿 Walima
+    </a>
+
+    <a class="event red"
+       href="https://photos.app.goo.gl/YKrkwD5SrfhtkMzJ7"
+       target="_blank" rel="noopener">
+       ❤️ Barat 1
+    </a>
+
+   
+<!-- Mehndi 2 & Barat 2 dropdown -->
+<button class="event purple" onclick="toggleEvents()">
+  ✨ Mehndi 2 & Barat 2
+</button>
+
+<div id="extraEvents" style="display: none;">
+
+  <a class="event gold"
+     href="https://photos.app.goo.gl/3SYXa3Q2RNzf7GFR9"
+     target="_blank" rel="noopener">
+    💛 Mehndi 2
+  </a>
+
+<a class="event red"
+   href="https://photos.app.goo.gl/EBEVPoZx1XJGhrKE7"
+   target="_blank" rel="noopener">
+  ❤️ Barat 2
+</a>
+
+  <a class="event green"
+     href="https://1024terabox.com/s/1MYywYV0GIhYt9CuppqLj6g"
+     target="_blank" rel="noopener">
+    🚁 Barat Drones
+  </a>
+
+</div>
+
+<script>
+  function toggleEvents() {
+    const events = document.getElementById("extraEvents");
+
+    if (events.style.display === "none") {
+      events.style.display = "block";
+    } else {
+      events.style.display = "none";
+    }
+  }
+</script>
